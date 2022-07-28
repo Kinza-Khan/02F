@@ -1,0 +1,83 @@
+
+li{
+    display: inline;
+    padding: 20px;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: burlywood;
+}
+a:hover{
+    color: aqua;
+}
+a:active{
+    color: blueviolet;
+}
+/* a:link{
+    color: burlywood;
+} */
+/* a:hover{
+    color: aqua;
+    font-size: 30px;
+    text-decoration: none;
+} */
+
+
+/* a:active{
+    color: red;
+} */
+/* a:visited{
+    color: yellow;
+} */
+p::first-letter{
+    font-size: 60PX;
+    color: maroon;
+}
+p::first-line{
+    color: blueviolet;
+}
+/* p{
+    text-indent: 150px;
+} */
+p::selection{
+    background-color: black ;
+    color: white;
+}
+p::before{
+    content: " kinza ";
+}
+p::after{
+    content: " hello ";
+}
+
+h1{
+    text-transform: uppercase;
+    word-spacing: 30px;
+    letter-spacing: 7px;
+}
+
+p{
+    text-align: justify;
+    font-size: 30px;
+    padding: 50px;
+    background-color: rgb(0, 242, 255);
+    border-top-style: dashed;
+    border-top-color: maroon;
+    border-top-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color:yellow ;
+    border-bottom-width: 10px;
+    border-left-style: dotted;
+    border-left-color: blue;
+    border-left-width: 10px;
+    border-right-color: red;
+    border-right-width: 10px;
+    border-right-style: dashed; */
+    /* border-left: 10px solid black;
+    border-right: 10px dashed maroon;
+    border-top: 10px solid red;
+    border-bottom: 10px solid yellowgreen;
+    border: 10px solid red;
+}

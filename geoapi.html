@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js">
+</script>
+<style>
+    #demo{
+        height: 200px;
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+    
+
+    <h1>Find your Location</h1>
+<button type="submit" onclick="geo()">location</button>
+<br>
+<div id="demo"></div>
+<script>
+
+var a = document.getElementById("demo");
+
+function geo(){
+
+if(window.navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(pos);
+
+    // alert("supporting")
+
+}
+else{
+    alert("not supporting");
+}
+
+
+
+} 
+
+function pos(position){
+a.innerHTML= "latitude"+ position.coords.latitude +
+ " longitude" + position.coords.longitude;
+
+   var latlng = new google.LatLng(24.8693606,67.082216);
+
+
+}
+//loading google map
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

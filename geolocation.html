@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocation api</title>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js">
+</script>
+    <style>
+        #demo{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<h1>GeoLocation</h1>
+<button onclick="getC()" type="submit">Find Your Location</button>
+<div id="demo"></div>
+
+
+<script>
+
+var a = document.getElementById("demo");
+function getC(){
+
+if(navigator.geolocation){
+    // alert("supporting")
+navigator.geolocation.getCurrentPosition(getcoordinates);
+
+}
+else{
+    alert("not supporting");
+}
+
+
+}
+
+function getcoordinates(pos){
+    a.innerHTML="longitude "+ pos.coords.longitude + "  latitude " 
+    + pos.coords.latitude;
+
+    var latlng = new google.maps.LatLng(24.9090471,67.0929445);
+    var map = new google.maps.Map(a,{
+
+        center: latlng,
+        zoom:16,
+        mapTypeId:"roadmap"
+
+
+    })
+    var marker = new google.maps.Marker({
+
+    position: latlng,
+    map:map,
+    drag:true
+
+
+})
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>

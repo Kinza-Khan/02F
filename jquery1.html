@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery First Lecture</title>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<button class="h">Hide</button>
+<button class="s">Show</button>
+<button class="so">Slide Up</button>
+<button class="sd">Slide down</button>
+<button class="fo">fade Out</button>
+<button class="fi">fade in</button>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quisquam nulla, ipsa consectetur, repellat vero consequuntur, corporis molestiae delectus mollitia veniam asperiores sequi? Nemo possimus quidem id inventore architecto nostrum.</p>
+
+
+<script>
+
+$(document).ready(function(){
+
+$('.h').click(function(){
+    $('p').hide();
+});
+
+$('.s').click(function(){
+$('p').show();
+
+})
+$('.fo').click(function(){
+  $('p').fadeOut();
+})
+$('.fi').click(function(){
+  $('p').fadeIn();
+})
+$('.so').click(function(){
+  $('p').slideUp();
+})
+
+$('.sd').click(function(){
+    $('p').slideUp();
+})
+
+
+
+
+
+})
+
+
+
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>

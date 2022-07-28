@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button type="submit" onclick="fun()">click here</button>
+    <div id="demo"></div>
+    <!-- <script>
+        function fun() {
+            var inp = document.getElementById("inp").value;
+            if (inp % 2 == 0) {
+                document.getElementById("demo").innerHTML = "your number is even";
+
+            } else {
+                document.getElementById("demo").innerHTML = "your number is odd";
+            }
+        }
+    </script> -->
+    <!-- <script>
+        function fun() {
+
+
+            var inp = document.getElementById("inp").value;
+            switch (inp) {
+                case "manager":
+                    document.getElementById("demo").innerHTML = "150000";
+
+                    break;
+                case "doctor":
+                    document.getElementById("demo").innerHTML = "200000";
+                    break;
+                default:
+                    document.getElementById("demo").innerHTML = "your designation does not match in our program";
+
+                    break;
+            }
+        }
+    </script>   -->
+    <script>
+        function fun() {
+            var inp = document.getElementById("inp").value;
+            var per = (inp / 500) * 100;
+
+
+            switch (true) {
+                case (per >= 80):
+                    document.getElementById("demo").innerHTML = "Grade A+";
+
+                    break;
+                case (per >= 70):
+                    document.getElementById("demo").innerHTML = "Grade A";
+
+                    break;
+                case (per >= 60):
+                    document.getElementById("demo").innerHTML = "Grade B";
+
+                    break;
+
+
+                default:
+                    document.getElementById("demo").innerHTML = "fAIL";
+
+                    break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

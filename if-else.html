@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Physics</label>
+    <input type="text" id="phy">
+    <br>
+    <br>
+    <label for="">Chemistry</label>
+    <input type="text" id="chem">
+    <br>
+    <br>
+    <label for="">Maths</label>
+    <input type="text" id="math">
+    <br>
+    <br>
+
+    <label for="">Urdu</label>
+    <input type="text" id="urdu">
+    <br>
+    <br>
+
+    <label for="">english</label>
+    <input type="text" id="eng">
+    <br>
+    <br>
+    <button type="submit" onclick="res()">Submit</button>
+    <div id="demo"></div>
+    <script>
+        function res() {
+
+
+            var p = parseInt(document.getElementById("phy").value);
+            var c = parseInt(document.getElementById("chem").value);
+            var m = parseInt(document.getElementById("math").value);
+            var u = parseInt(document.getElementById("urdu").value);
+            var e = parseInt(document.getElementById("eng").value);
+            var ob = p + c + m + u + e;
+            var per = (ob / 500) * 100;
+
+            if (per >= 80) {
+                document.getElementById("demo").innerHTML = "Physics =" + p + "<br> chemistry " + c + "<br> maths " +
+                    m + "<br> english " + e + " <br> urdu " + u + "<br> obtain " + ob + " <br> percentage " + per +
+                    "<br> Grade     A+ ";
+
+            } else if (per >= 70 && per < 80) {
+                document.getElementById("demo").innerHTML = "Physics =" + p + "<br> chemistry " + c + "<br> maths " + m + "<br> english " + e + " <br> urdu " + u + "<br> obtain " + ob + " <br> percentage " + per +
+                    "<br> Grade     A ";
+            } else if (per >= 60) {
+                document.getElementById("demo").innerHTML = "Physics =" + p + "<br> chemistry " + c + "<br> maths " + m + "<br> english " + e + " <br> urdu " + u + "<br> obtain " + ob + " <br> percentage " + per +
+                    "<br> Grade     B ";
+            } else if (per >= 50) {
+                document.getElementById("demo").innerHTML = "Physics =" + p + "<br> chemistry " + c + "<br> maths " + m + "<br> english " + e + " <br> urdu " + u + "<br> obtain " + ob + " <br> percentage " + per +
+                    "<br> Grade     C ";
+            } else {
+
+                document.getElementById("demo").innerHTML = "Physics =" + p + "<br> chemistry " + c + "<br> maths " + m + "<br> english " + e + " <br> urdu " + u + "<br> obtain " + ob + " <br> percentage " + per +
+                    "<br> Grade     fail";
+            }
+
+
+
+
+
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+
+    <style>
+.main{
+    display: grid;
+    grid-template-rows: 100px 300px 100px 400px;
+    grid-template-columns: 200px 400px 500px 100px ;
+}
+        .d{
+            border: 1px solid black;
+            margin: 4px;
+        }
+    
+
+        .d1{
+            grid-column: 1/5;
+        }
+        .d2{
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+    </style>
+    </head>
+<body>
+
+<div class="main">
+
+<div class="d d1">a</div>
+<div class="d d2">b</div>
+<div class="d d3">c</div>
+<div class="d d4">d</div>
+<div class="d d5">e</div>
+<div class="d d6">f</div>
+<div class="d d7">g</div>
+<div class="d d8">h</div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

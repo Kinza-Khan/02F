@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="js/jquery-3.5.1.min.js "></script>
+</head>
+  <body>
+
+    <script>
+        $(document).ready(function(){
+            
+            $("#sub").on('click',function(){
+                 var a = $("#in").val();
+                 var b= $("#m").val();
+                //  var r= $("#d").val();
+                if($("#in").val()=="" && $("#m").val()=="" ){
+                    $("#inp").html("please fill out this field").css("color","red");
+                    $("#mes").html(" please fill out this field").css("color","red");
+                    
+              
+
+                }
+                else if ($("#in").val()==""){
+                    $("#inp").html(" please fill out this field").css("color","red");
+                }
+                else if ($("#m").val()==""){
+                    $("#mes").html("please fill out this field").css("color","red");
+                }
+
+                if ($("#in").val()!="" && $("#m").val()!="" ){
+                $("#main").append("<h1>"+ a+ " </h1>")
+                $("#main").append("<span>"+ b +"</span>" );
+                $("#mes").html(" ");
+                $("#inp").html(" ");
+                $("#in").val("");  
+                $("#m").val(""); 
+
+                }
+                 
+              
+            //   if($("#d").val("2")){
+            //     $("#main").append("<img  src='images/r2.png'/>");
+
+            //   }
+            //   else if($("#d").val("3")){
+            //     $("#main").append("<img  src='images/r3.png'/>");
+
+            //   }
+               
+               
+            })
+           
+        })
+        
+    </script>
+    <div class="container">
+ 
+            <div class="form-group">
+             <label for="">Name</label>
+             <input type="text" id="in" class="form-control">
+             <div id="inp"></div>
+            </div>
+            
+         <div class="form-group">
+    
+            <label style="position: relative; top: -240px;" for="">Message</label>
+            <textarea name="" id="m" cols="60" rows="10"></textarea>
+            <br>
+          <div id="mes"></div>
+         </div>
+         <button type="submit" id="sub">Submit</button>
+         
+      
+     
+    </div>
+   
+   <div id="main"></div>
+  </body>
+</html>

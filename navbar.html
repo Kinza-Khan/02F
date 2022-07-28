@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+
+        .main{
+            height: 100px;
+            width:100% ;
+            /* background-color: pink; */
+            box-shadow: 5px 5px 5px rgb(167, 163, 163);
+        }
+        .main2{
+            /* background-color: yellow; */
+            height: inherit;
+            display: flex;
+width: 80%;
+margin: 0 auto;
+
+        }
+        .logo{
+            /* background-color: orange; */
+            height: inherit;
+            width: 20%;
+        }
+        .ul{
+            /* background-color: aquamarine; */
+            width: 80%;
+        }
+        .logo img{
+            height: inherit;
+    width: 200px;
+
+        }
+        .ful{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .ful li{
+    
+            padding: 10px;
+            /* padding-top: 10px; */
+            margin: 10px;
+            list-style-type: none;
+        }
+        .iul{
+            position: absolute;
+            text-align: center;
+            padding-left: 10px;
+padding-right: 10px;
+display: none;
+        }
+        .iul li{
+            border-bottom: 1px solid black;
+            background-color: rgb(174, 168, 168);
+            color: white;
+            margin: 0px;
+            font-weight: bold;
+        }
+        .g:hover .iul{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+<div class="main">
+
+<div class="main2">
+<div class="logo">
+    <img src="download.png" style="height: 70px; margin-top: 15px;" alt="">
+</div>
+    <div class="ul">
+<ul class="ful">
+    <li>Home</li>
+    <li>About</li>
+    <li class="g">Gallery
+<ul class="iul">
+    <li>Baby Cloth</li>
+    <li>Baby Boy</li>
+    <li>Baby Girl</li>
+    <li>Childern</li>
+
+</ul>
+
+    </li>
+
+    <li>Faq</li>
+    <li>Contact</li>
+    <li>Reviews</li>
+    <li>Privacy</li>
+</ul>
+    </div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
